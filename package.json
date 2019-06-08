@@ -1,0 +1,57 @@
+{
+  "name": "upLoadPhotoApp",
+  "version": "1.0.0",
+  "description": "this is an app where you can upload pictures I'm using React/Redux and probably Sagas for the UIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test watch": "jest --watch",
+    "test coverage": "jest --coverage --colors",
+    "build": "webpack --mode development --config ./webpack.config.js",
+    "start": "webpack-dev-server --mode development --config ./webpack.config.js --open --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aronja/upLoadPhotos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aronja/upLoadPhotos/issues"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  },
+  "homepage": "https://github.com/Aronja/upLoadPhotos#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.6.0",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.6.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "css-loader": "^2.1.1",
+    "file-loader": "^4.0.0",
+    "kotlin-playground": "^1.19.0",
+    "react-router-dom": "^5.0.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+.logo {
+    max-width: 200px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header {
+    padding: 30px;
+    display: inherit;
+    background-color: black;
+    margin-bottom: 20px;
+    min-height: 65px;
+  }
+
+.title {
+    color: whitesmoke;
+    font-family:  'Verdana';
+}  
+
