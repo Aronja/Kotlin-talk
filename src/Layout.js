@@ -16,6 +16,12 @@ export class Layout extends React.Component {
         )
     }
 
+  getPreviousPage() {
+    return this.setState(
+      {page: dataModel[this.state.page].PREVIOUSPAGE}
+    )
+  }
+
      render () {
 
         console.log(dataModel[this.state.page].NEXTPAGE)
@@ -23,6 +29,7 @@ export class Layout extends React.Component {
             <div>
                 <Header title="Kotlin in the real world"></Header>
                 <button onClick={this.getNextPage.bind(this)}>NEXT</button>  
+                <button onClick={this.getPreviousPage.bind(this)}>BACK</button>
 
                 {/* // check the props and create render Correct Component function 
                 // InterestingBit Component which also contains code-example
