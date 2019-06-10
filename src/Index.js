@@ -9,9 +9,7 @@ import { Layout } from './Layout';
 const title = 'Kotlin in the real world';
 const app = document.getElementById("app")
 
-const code = document.addEventListener('DOMContentLoaded', () => {
-  playground('code'); 
-});
+
 
 
 render(
