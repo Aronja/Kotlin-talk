@@ -8,8 +8,10 @@
     "test watch": "jest --watch",
     "test coverage": "jest --coverage --colors",
     "build": "webpack --mode development --config ./webpack.config.js",
-    "start": "webpack-dev-server --mode development --config ./webpack.config.js --open --hot"
+    "dev": "webpack-dev-server --mode development --config ./webpack.config.js --open --hot",
+    "start": "./node_modules/webpack/bin/webpack.js -p --progress && node server.js"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Aronja/upLoadPhotos.git"
