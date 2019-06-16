@@ -8,10 +8,8 @@
     "test watch": "jest --watch",
     "test coverage": "jest --coverage --colors",
     "build": "webpack --mode development --config ./webpack.config.js",
-    "dev": "webpack-dev-server --mode development --config ./webpack.config.js --open --hot",
-    "start": "node server.js"
+    "start": "node_modules/.bin/webpack-dev-server --mode development --config ./webpack.config.js --open --hot"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Aronja/upLoadPhotos.git"
@@ -45,15 +43,17 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-cli": "^3.3.0"
   },
   "dependencies": {
     "css-loader": "^2.1.1",
     "file-loader": "^4.0.0",
+    "i": "^0.3.6",
     "kotlin-playground": "^1.19.0",
+    "npm": "^6.9.0",
     "react-router-dom": "^5.0.0",
-    "style-loader": "^0.23.1",
-    "url-loader": "^2.0.0"
+    "url-loader": "^2.0.0",
+    "webpack-dev-server": "^3.7.1"
   }
+
 }
