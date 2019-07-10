@@ -2,8 +2,7 @@ import React from 'react';
 
 import {Code} from './Code';
 import {Content} from './Content';
-import {Subtitle} from '../Subtitle';
-import {KotlinCode} from "./KotlinCode";
+import {Subtitle} from './Subtitle';
 
 
 export const Page = (props) => {
@@ -15,7 +14,6 @@ export const Page = (props) => {
       <Content content={props.pageProperties.CONTENT}></Content>
       <br></br>
       <Code/>
-      <KotlinCode/>
     </div>
   )
 }

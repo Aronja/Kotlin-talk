@@ -13,3 +13,15 @@ Step 1: Create webpack 4 config
  - set mode to dev or prod
  - specify output file 
  - setting up babel and react
+ 
+ Step 2: 
+ - set up Enzyme and Tests 
+ 
+ Step 3: 
+ - build a component based app, datadriven 
+ - the data should live in a JSON object 
+ - I can easily update the JSON and thereby create new components
+ 
+ Step 4: 
+ - mock the API call for now 
+ - the API (probably Python will return a POST containing a JSON with the response of my Kotlin compiler)

@@ -30,11 +30,6 @@ export class Layout extends React.Component {
                 <Header title="Kotlin in the real world"></Header>
                 <button onClick={this.getNextPage.bind(this)}>NEXT</button>  
                 <button onClick={this.getPreviousPage.bind(this)}>BACK</button>
-
-                {/* // check the props and create render Correct Component function 
-                // InterestingBit Component which also contains code-example
-                //  <code>val name = ""</code> */}
-                {/* rendered Component mit dem richtigen datamodel */}
                 <Page pageProperties={dataModel[this.state.page]}></Page>  
             </div>
             )

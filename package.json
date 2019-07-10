@@ -10,6 +10,14 @@
     "build": "webpack --mode development --config ./webpack.config.js",
     "start": "node_modules/.bin/webpack-dev-server --mode development --config ./webpack.config.js --open --hot"
   },
+  "jest": {
+   "verbose": true,
+    "setupFilesAfterEnv": ["./setupTests.js"],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Aronja/upLoadPhotos.git"
@@ -19,12 +27,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Aronja/upLoadPhotos/issues"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
-    }
   },
   "homepage": "https://github.com/Aronja/upLoadPhotos#readme",
   "devDependencies": {
