@@ -11,8 +11,10 @@
     "start": "node_modules/.bin/webpack-dev-server --mode development --config ./webpack.config.js --open --hot"
   },
   "jest": {
-   "verbose": true,
-    "setupFilesAfterEnv": ["./setupTests.js"],
+    "verbose": true,
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
@@ -54,8 +56,8 @@
     "kotlin-playground": "^1.19.0",
     "npm": "^6.9.0",
     "react-router-dom": "^5.0.0",
+    "style-loader": "^1.0.0",
     "url-loader": "^2.0.0",
     "webpack-dev-server": "^3.7.1"
   }
-
 }
