@@ -7,7 +7,7 @@ class App extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {currentName: "DATACLASSES"}
+    this.state = {currentName: "WELCOME"}
   }
 
   render() {

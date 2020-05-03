@@ -9,13 +9,31 @@ export const dataModel = {
         TITLE: "Welcome to XConf", 
         NEXTPAGE: HISTORYOFKOTLIN,
         PREVIOUSPAGE: WELCOME,
-        CODE: [`fun main() {println("this")}`]
+        CODE: [`fun main() {println("this")}`],
+        FORM: {
+            "fields": [
+                {type: "radio", name: "red"},
+                {type: "radio", name: "blue"},
+                {type: "radio", name: "yellow"},
+                {type: "text", name: "firstName"},
+                {type: "text", name: "lastName"},
+                {type: "text", name: "address"}
+                ]
+        }
     }, 
     HISTORYOFKOTLIN: {
         TITLE: "a brief history", 
         CONTENT: "Kotlin was developed by JetBrains in 2011",
         NEXTPAGE: DATACLASSES,
         PREVIOUSPAGE: WELCOME,
+        FORM: {
+            "fields": [
+                {type: "checkbox", name: "red"},
+                {type: "text", name: "firstName"},
+                {type: "text", name: "lastName"},
+                {type: "text", name: "address"}
+            ]
+        }
     }, 
     DATACLASSES: {
         TITLE: "Data classes in Kotlin", 
